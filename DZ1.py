@@ -48,7 +48,7 @@ class Parse5ka:
 
     @staticmethod
     def _save_to_file(product, file_name):
-        path = Path(os.path.dirname(__file__)).joinpath('products').joinpath(f'{file_name}.json')
+        path = Path(os.path.dirname(__file__)).joinpath('less1/products').joinpath(f'{file_name}.json')
         with open(path, 'w', encoding='UTF-8') as file:
             json.dump(product, file, ensure_ascii=False)
 
